@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>F1xing-blog</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="type/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="type/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+                <!-- Header -->
+                
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Elements -->
+							<article id="elements">
+								{% for web in site.posts %}
+								<article class="post">
+								  <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+								</article>
+							  {% endfor %}
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright"></p>
+					</footer>
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="type/assets/js/jquery.min.js"></script>
+			<script src="type/assets/js/browser.min.js"></script>
+			<script src="type/assets/js/breakpoints.min.js"></script>
+			<script src="type/assets/js/util.js"></script>
+			<script src="type/assets/js/main.js"></script>
+
+	</body>
+</html>
